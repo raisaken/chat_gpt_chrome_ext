@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Editor files
+.vscode/
+.idea/
+
+# Dependency directories
+**/bower_components/
+**/jspm_packages/
+
+# Distribution directory
+dist/
+
+# Build output
+build/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# OS generated files
+ehthumbs.db
+Icon?
+
+# Temp files
+*.bak
+*.swp
+*.tmp
+*~
+*.sublime-workspace
+*.sublime-project

@@ -3,7 +3,6 @@
     "name": "ChatGPT Chat Extension",
     "version": "1.0",
     "description": "A Chrome extension to chat with ChatGPT API.",
-    "permissions": ["activeTab", "storage"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
@@ -24,6 +23,15 @@
         "128": "images/128.png"
       },
       "default_popup": "popup.html"
-    }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [".env"],
+        "matches": ["<all_urls>"],
+        "use_dynamic_url": true
+      }
+    ],
+    "permissions": ["activeTab", "storage", "http://localhost:3000/"],
+
   }
   

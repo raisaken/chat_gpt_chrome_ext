@@ -1,10 +1,16 @@
-// Define variables and constants
-const apiKey = 'api_key';
 
-const apiUrl = 'https://api.openai.com/v1/chat/completions';
+
+// Define variables and constants
+
+const apiKey = process.env.OPENAI_API_KEY;
+
+// const apiUrl = 'https://api.openai.com/v1/chat/completions';
+
+const apiUrl = 'http://localhost:3000/api/send-message'
 
 // Function to send a message to ChatGPT API
 async function sendMessage(message) {
+  console.log(message,'in UI')
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -15,7 +21,7 @@ async function sendMessage(message) {
       prompt: message,
       max_tokens: 50, // Adjust as needed
     }),
-  });
+  }); 
   const data = await response.json();
   console.log('data', data)
   return data.choices[0].text;

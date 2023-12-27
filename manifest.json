@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Chat Extension",
+    "version": "1.0",
+    "description": "A Chrome extension to chat with ChatGPT API.",
+    "permissions": ["activeTab", "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+      }
+    },
+    "icons": {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    },
+    "browser_action": {
+      "default_icon": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+      },
+      "default_popup": "popup.html"
+    }
+  }
+  

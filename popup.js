@@ -1,5 +1,6 @@
 // Define variables and constants
-const apiKey = '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';
+const apiKey = 'api_key';
+
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 // Function to send a message to ChatGPT API
